@@ -164,7 +164,7 @@ function About() {
             {/* Download CV button */}
             <div className="flex justify-center mt-2">
               <a
-                href="/my cv.pdf"
+                href="https://raw.githubusercontent.com/Fransun7/fransun-portfolio/master/CV_2026-05-02_Francis_Omotayo%20(1).pdf"
                 download="francis-omotayo-cv.pdf"
                 className="inline-flex items-center gap-3 font-roboto-mono text-sm font-semibold px-7 py-3 rounded-xl text-white transition-all duration-300 hover:scale-105 active:scale-95"
                 style={{
