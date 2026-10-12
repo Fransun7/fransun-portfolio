@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Project1 from "../assets/Images/Project1.png";
-import Projecct2 from "../assets/Images/quiz app.png";
+import Projecct2 from "../assets/Images/quiz.png";
 import Project3 from "../assets/Images/Project2.png";
 import Project4 from "../assets/Images/Project3.png";
 import Projecct5 from "../assets/Images/project5.png";
 import bg1 from "../assets/Images/bg1.jpg";
 import Project6 from "../assets/Images/agro-connect.png";
+import Inxern from "../assets/Images/inxern_prj.png";
 
 const projects = [
   {
@@ -23,11 +24,11 @@ const projects = [
       "A free, open-source practice tool built for Nigerian students preparing for JAMB. Covers Biology, Chemistry, and Physics with score tracking and a wrong-answer review feature. Built with vanilla JavaScript.",
   },
   {
-    title: "Task Manager Web App",
-    image: Project3,
-    link: null,
+    title: "InXern",
+    image: Inxern,
+    link: "inxern.tech",
     description:
-      "An essential productivity tool designed for managing personal and team task flow efficiently. Built with vanilla JavaScript, HTML, and CSS.",
+      "InXern is a dual-sided recruitment and internship platform designed to seamlessly connect emerging talent with organizations. It streamlines the hiring process by leveraging dynamic skill-matching algorithms and comprehensive executive management dashboards.",
   },
   {
     title: "Book Management System Web App",
@@ -39,7 +40,7 @@ const projects = [
   {
     title: "Weather Web App",
     image: Projecct5,
-    link: "https://weather-app-omega-jade-89.vercel.app/",
+    link: "https://weda-one.vercel.app/",
     description:
       "An easy-to-use weather application that fetches and displays real-time weather data based on the user's location or a searched city.",
   },
@@ -122,9 +123,9 @@ function Projects() {
             }}
           >
             {/* Image container */}
-            <div className="relative w-full h-40 overflow-hidden">
+            <div className="relative w-full overflow-hidden">
               <img
-                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                className="object w-contain h-full transition-transform duration-500 group-hover:scale-105"
                 src={project.image}
                 alt={project.title}
               />

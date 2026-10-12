@@ -119,21 +119,28 @@ function MyHome() {
 
           {/* Tech stack pills */}
           <div className="flex flex-wrap gap-2 mt-7">
-            {["React", "JavaScript", "Tailwind CSS", "HTML & CSS"].map(
-              (tech) => (
-                <span
-                  key={tech}
-                  className="text-xs font-roboto-mono px-3 py-1 rounded-full border"
-                  style={{
-                    color: "#f97316",
-                    borderColor: "rgba(249,115,22,0.3)",
-                    background: "rgba(249,115,22,0.06)",
-                  }}
-                >
-                  {tech}
-                </span>
-              ),
-            )}
+            {[
+              "React",
+              "JavaScript",
+              "TypeScript",
+              "Tailwind CSS",
+              "HTML & CSS",
+              "Git & Github",
+              "Supabase",
+              "Vercel",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="text-xs font-roboto-mono px-3 py-1 rounded-full border"
+                style={{
+                  color: "#f97316",
+                  borderColor: "rgba(249,115,22,0.3)",
+                  background: "rgba(249,115,22,0.06)",
+                }}
+              >
+                {tech}
+              </span>
+            ))}
           </div>
         </div>
 
